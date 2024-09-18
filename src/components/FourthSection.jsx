@@ -29,7 +29,7 @@ function FourthSection() {
                     </p>
                 </div>
                 <div data-aos="fade-left" className='hidden xl:block absolute bottom-0 lg:right-2 2xl:right-[78px]'>
-                    <img className='lg:w-10/12 2xl:w-11/12 3xl:w-full' src='/images/patrick.png' />
+                    <img className='lg:w-10/12 2xl:w-11/12 3xl:w-full' src='/images/patrick.png' alt='pat' />
                 </div>
             </div>
             <div className="block xl:hidden relative third-section text-white">

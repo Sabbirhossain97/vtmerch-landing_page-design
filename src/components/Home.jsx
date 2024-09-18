@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ProductCard = ({ imgSrc, title, price, oldPrice }) => (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300">
         <img
             src={imgSrc}
             alt={title}

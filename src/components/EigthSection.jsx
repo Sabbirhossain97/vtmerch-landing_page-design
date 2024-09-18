@@ -1,23 +1,28 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function EigthSection() {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     return (
         <div className='eigth-section min-h-[1056px] relative z-100'>
-            <div className='hidden lg:block absolute -bottom-8 right-2 transform -translate-x-1/2 '>
-                <img src='/images/queen.png' />
+            <div className='hidden lg:block absolute -bottom-8 right-2 transform -translate-x-1/2'>
+                <img src='/images/queen.png' alt='queen' />
             </div>
-            <div className='z-50 flex absolute w-full justify-center pt-[50px] lg:pt-[150px]'>
+            <div data-aos="fade-up" className='z-50 flex absolute w-full justify-center pt-[50px] lg:pt-[150px]'>
                 <p className='text-[#fff] font-actOfRejection text-center text-[48px] sm:text-[84px] md:text-[100px] lg:text-[140px] not-italic leading-[168px] tracking-[1px] uppercase'>what we believe</p>
             </div>
             <div className='relative' >
                 <div className='hidden lg:block absolute top-[60px] right-[52px]'>
-                    <img className='opacity-5 2xl:opacity-10 w-full h-[706px]' src='logo/valuetainment_red.svg' />
+                    <img className='opacity-5 2xl:opacity-10 w-full h-[706px]' src='logo/valuetainment_red.svg' alt='logo' />
                 </div>
                 <div className='pt-[137px] lg:pt-[237px] z-20 flex flex-col justify-center 2xl:flex-row w-full gap-[52px]'>
-                    <div className='flex justify-center px-[30px] lg:px-0'>
-                        <img className='w-[641px] h-[652px] rounded-xl object-cover' src='/images/hero_2.png' />
+                    <div data-aos="fade-right" className='flex justify-center px-[30px] lg:px-0'>
+                        <img className='w-[641px] h-[652px] rounded-xl object-cover' src='/images/hero_2.png' alt='hero_2' />
                     </div>
-                    <div className='flex justify-center'>
+                    <div data-aos="fade-left" className='flex justify-center'>
                         <div className='flex flex-col pt-0 2xl:pt-20 items-start relative px-[30px] lg:px-0'>
                             <div className='text-left'>
                                 <p className='text-[rgba(255,255,255,0.80)] pb-12 text-[16px] font-medium leading-[150%] tracking-[0.08px]'>

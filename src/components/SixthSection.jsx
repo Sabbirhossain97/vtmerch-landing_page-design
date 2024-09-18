@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProductCard = ({ imgSrc, title, price, oldPrice }) => (
-    <div className="flex flex-col items-center px-4 pt-4 pb-6 rounded-xl bg-[#fff]">
+    <div className="flex flex-col cursor-pointer transition duration-300 hover:scale-105 items-center px-4 pt-4 pb-6 rounded-xl bg-[#fff]">
         <img
             src={imgSrc}
             alt={title}
@@ -17,10 +19,13 @@ const ProductCard = ({ imgSrc, title, price, oldPrice }) => (
 
 
 function SixthSection() {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     return (
         <div className='bg-[#F6F5F5]'>
             <div className='flex flex-col'>
-                <div className='font-montserrat text-[32px] lg:text-[50px] xl:text-[60px] 2xl:text-[70px] text-center 2xl:text-start not-italic font-semibold leading-[84px] tracking-[0.5px] uppercase w-full px-[50px] lg:px-[150px] mt-[100px]'>
+                <div data-aos="fade-up" className='font-montserrat xs:text-[36px] sm:text-[42px] lg:text-[50px] xl:text-[60px] 2xl:text-[70px] text-center 2xl:text-start not-italic font-semibold leading-[84px] tracking-[0.5px] uppercase w-full px-[50px] lg:px-[150px] mt-[100px]'>
                     New Arrival
                 </div>
                 <div className="relative grid grid-cols-1 sm:grid-cols-2 z-20 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 pt-[48px] px-[50px] md:px-[120px] xl:px-[100px] 2xl:px-[150px] pb-[100px]">

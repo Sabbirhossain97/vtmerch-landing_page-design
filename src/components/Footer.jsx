@@ -6,7 +6,7 @@ function Footer() {
             <div className='flex flex-col items-center px-[50px] lg:px-[100px] 2xl:px-[150px] py-[48px]'>
                 <div className="flex items-end justify-center lg:justify-start w-full">
                     <div className='' >
-                        <img className='xs:w-20 xs:h-20 sm:w-28 sm:h-28' src='images/Vtmerch.png' />
+                        <img className='xs:w-20 xs:h-20 sm:w-28 sm:h-28' src='images/Vtmerch.png' alt='vtmerch' />
                     </div>
                     <div className=''>
                         <p className="font-montserrat xs:text-[48px] sm:text-[72px] md:text-[100px] xs:leading-[80px] sm:leading-[112px] not-italic tracking-[5px] font-extrabold text-[#FFF] ">VTMERCH</p>
@@ -20,10 +20,10 @@ function Footer() {
                         </p>
 
                         <div className='flex flex-col pt-12 gap-3'>
-                            <button className='text-[16px] rounded-xl border border-white/50 not-italic font-medium leading-[20px] tracking-[0.08px]'>
+                            <button className='text-[16px] rounded-xl hover:bg-gray-800 transition duration-300 border border-white/50 not-italic font-medium leading-[20px] tracking-[0.08px]'>
                                 <p className='text-[#fff] text-center text-[16px] font-normal py-[10px] leading-[24px] tracking-[0.08px] '>Enter your email</p>
                             </button>
-                            <button className='text-[16px] bg-[#fff] rounded-xl not-italic font-medium leading-[20px] tracking-[0.08px]'>
+                            <button className='text-[16px] bg-[#fff] hover:bg-white/80 transition duration-300 rounded-xl not-italic font-medium leading-[20px] tracking-[0.08px]'>
                                 <p className='text-[#000] text-center text-[16px] py-[10px] font-normal leading-[24px] tracking-[0.08px] '>Subscribe</p>
                             </button>
                         </div>
@@ -35,13 +35,13 @@ function Footer() {
                                     Customer Services
                                 </p>
                                 <div className='flex flex-col gap-4 pt-6 text-[16px] font-normal leading-[24px] tracking-[0.08px] text-white/80'>
-                                    <li>About Us</li>
-                                    <li>Search</li>
-                                    <li>Privacy Policy</li>
-                                    <li>Contact Us</li>
-                                    <li>Terms of Service</li>
-                                    <li>Refund policy</li>
-                                    <li>Track Order</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>About Us</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Search</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Privacy Policy</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Contact Us</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Terms of Service</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Refund policy</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Track Order</li>
                                 </div>
                             </div>
                         </div>
@@ -51,11 +51,11 @@ function Footer() {
                                     Products
                                 </p>
                                 <div className='flex flex-col gap-4 pt-6 text-[16px] font-normal leading-[24px] tracking-[0.08px] text-white/80'>
-                                    <li>Featured products</li>
-                                    <li>Bestseller</li>
-                                    <li>Latest product</li>
-                                    <li>All collections</li>
-                                    <li>All products</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Featured products</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Bestseller</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>Latest product</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>All collections</li>
+                                    <li className='cursor-pointer hover:text-white transition duration-300'>All products</li>
                                 </div>
                             </div>
                         </div>
@@ -93,18 +93,18 @@ function Footer() {
                                         <p>store@valuetainment.com</p>
                                     </li>
                                     <li className='flex gap-3 items-center'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <svg className='cursor-pointer' xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                                             <path d="M8.57999 11.04C8.51999 11.04 7.19999 11.04 6.59999 11.04C6.27999 11.04 6.17999 10.92 6.17999 10.62C6.17999 9.82002 6.17999 9.00002 6.17999 8.20002C6.17999 7.88002 6.29999 7.78002 6.59999 7.78002H8.57999C8.57999 7.72002 8.57999 6.56002 8.57999 6.02002C8.57999 5.22002 8.71999 4.46002 9.11999 3.76002C9.53999 3.04002 10.14 2.56002 10.9 2.28002C11.4 2.10002 11.9 2.02002 12.44 2.02002H14.4C14.68 2.02002 14.8 2.14002 14.8 2.42002V4.70002C14.8 4.98002 14.68 5.10002 14.4 5.10002C13.86 5.10002 13.32 5.10002 12.78 5.12002C12.24 5.12002 11.96 5.38002 11.96 5.94002C11.94 6.54002 11.96 7.12002 11.96 7.74002H14.28C14.6 7.74002 14.72 7.86002 14.72 8.18002V10.6C14.72 10.92 14.62 11.02 14.28 11.02C13.56 11.02 12.02 11.02 11.96 11.02V17.54C11.96 17.88 11.86 18 11.5 18C10.66 18 9.83999 18 8.99999 18C8.69999 18 8.57999 17.88 8.57999 17.58C8.57999 15.48 8.57999 11.1 8.57999 11.04Z" fill="white" />
                                         </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <svg className='cursor-pointer' xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                                             <path d="M18.48 5.04C17.88 5.3 17.26 5.48 16.6 5.56C17.28 5.16 17.8 4.52 18.04 3.74C17.4 4.12 16.7 4.38 15.96 4.54C15.36 3.9 14.5 3.5 13.56 3.5C11.74 3.5 10.28 4.98 10.28 6.78C10.28 7.04 10.3 7.28 10.36 7.52C7.63998 7.4 5.23998 6.08 3.61998 4.1C2.45998 6.18 3.75998 7.9 4.61998 8.48C4.09998 8.48 3.57998 8.32 3.13998 8.08C3.13998 9.7 4.27998 11.04 5.75998 11.34C5.43998 11.44 4.71998 11.5 4.27998 11.4C4.69998 12.7 5.91998 13.66 7.33998 13.68C6.21998 14.56 4.57998 15.26 2.47998 15.04C3.93998 15.98 5.65998 16.52 7.51998 16.52C13.56 16.52 16.84 11.52 16.84 7.2C16.84 7.06 16.84 6.92 16.82 6.78C17.5 6.28 18.06 5.7 18.48 5.04Z" fill="white" />
                                         </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <svg className='cursor-pointer' xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                                             <path d="M18.5 18.0001V12.1401C18.5 9.26006 17.88 7.06006 14.52 7.06006C12.9 7.06006 11.82 7.94006 11.38 8.78006H11.34V7.32006H8.15997V18.0001H11.48V12.7001C11.48 11.3001 11.74 9.96006 13.46 9.96006C15.16 9.96006 15.18 11.5401 15.18 12.7801V17.9801H18.5V18.0001Z" fill="white" />
                                             <path d="M2.76001 7.31982H6.08001V17.9998H2.76001V7.31982Z" fill="white" />
                                             <path d="M4.42 2C3.36 2 2.5 2.86 2.5 3.92C2.5 4.98 3.36 5.86 4.42 5.86C5.48 5.86 6.34 4.98 6.34 3.92C6.34 2.86 5.48 2 4.42 2Z" fill="white" />
                                         </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                        <svg className='cursor-pointer' xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
                                             <g clip-path="url(#clip0_0_755)">
                                                 <path d="M13.5325 0H5.46721C2.72829 0 0.5 2.2284 0.5 4.96732V13.0326C0.5 15.7716 2.72829 17.9999 5.46721 17.9999H13.5325C16.2716 17.9999 18.4999 15.7715 18.4999 13.0326V4.96732C18.5 2.2284 16.2716 0 13.5325 0ZM16.903 13.0326C16.903 14.891 15.391 16.4029 13.5326 16.4029H5.46721C3.6089 16.403 2.09704 14.891 2.09704 13.0326V4.96732C2.09704 3.10901 3.6089 1.59704 5.46721 1.59704H13.5325C15.3909 1.59704 16.9029 3.10901 16.9029 4.96732V13.0326H16.903Z" fill="white" />
                                                 <path d="M9.49993 4.36182C6.94244 4.36182 4.86182 6.44244 4.86182 8.99993C4.86182 11.5573 6.94244 13.6378 9.49993 13.6378C12.0574 13.6378 14.1381 11.5573 14.1381 8.99993C14.1381 6.44244 12.0574 4.36182 9.49993 4.36182ZM9.49993 12.0407C7.82315 12.0407 6.45885 10.6766 6.45885 8.99983C6.45885 7.32294 7.82304 5.95875 9.49993 5.95875C11.1768 5.95875 12.541 7.32294 12.541 8.99983C12.541 10.6766 11.1767 12.0407 9.49993 12.0407Z" fill="white" />
@@ -126,7 +126,7 @@ function Footer() {
                     <div className='flex flex-col items-center lg:flex-row lg:items-end lg:justify-between'>
                         <p className='text-white/80 text-[16px] font-normal leading-[24px] tracking-[0.08px] text-center'>© 2024 Valuetainment Store. All rights reserved.</p>
                         <div className='flex gap-2'>
-                            <li>
+                            <li className='cursor-pointer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20" fill="none">
                                     <rect x="0.5" y="0.5" width="31" height="19" rx="1.5" fill="white" />
                                     <rect x="0.5" y="0.5" width="31" height="19" rx="1.5" stroke="#D1D1D1" />
@@ -147,7 +147,7 @@ function Footer() {
                                     <path d="M21.8124 13.9764H24.0656L24.545 12.5478H27.6132L27.9008 13.9764H30.202L29.387 10.5002L26.5106 7.73828L26.6544 8.50019C26.6544 8.50019 27.1338 10.643 27.2297 11.1192H25.2162C25.4079 10.643 26.175 8.59542 26.175 8.59542C26.175 8.59542 26.3667 8.07161 26.5106 7.73828" fill="#051244" />
                                 </svg>
                             </li>
-                            <li>
+                            <li className='cursor-pointer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20" fill="none">
                                     <g clip-path="url(#clip0_0_789)">
                                         <path d="M7.55222 7.20607C7.49408 6.75533 7.71913 6.27584 7.97357 5.98265C8.25676 5.63944 8.74625 5.395 9.1476 5.375C9.19636 5.84511 9.01069 6.30522 8.73625 6.64781C8.45243 6.98101 8.00295 7.24482 7.55222 7.20607Z" fill="black" />
@@ -174,7 +174,7 @@ function Footer() {
                                     </defs>
                                 </svg>
                             </li>
-                            <li>
+                            <li className='cursor-pointer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21" fill="none">
                                     <g clip-path="url(#clip0_0_810)">
                                         <path d="M26.7273 0.136719H14H1.27274C0.569844 0.136719 0 0.706563 0 1.40946V19.5913C0 20.2942 0.569844 20.864 1.27274 20.864H14H26.7273C27.4302 20.864 28 20.2942 28 19.5913V1.40946C28 0.706563 27.4302 0.136719 26.7273 0.136719Z" fill="#DEDEE0" />
@@ -191,7 +191,7 @@ function Footer() {
                                     </defs>
                                 </svg>
                             </li>
-                            <li>
+                            <li className='cursor-pointer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20" fill="none">
                                     <rect x="0.5" y="0.5" width="31" height="19" rx="1.5" fill="white" />
                                     <rect x="0.5" y="0.5" width="31" height="19" rx="1.5" stroke="#D1D1D1" />
@@ -212,7 +212,7 @@ function Footer() {
                                     <path d="M21.8124 13.9764H24.0656L24.545 12.5478H27.6131L27.9008 13.9764H30.2019L29.3869 10.5002L26.5105 7.73828L26.6543 8.50019C26.6543 8.50019 27.1337 10.643 27.2296 11.1192H25.2161C25.4079 10.643 26.1749 8.59542 26.1749 8.59542C26.1749 8.59542 26.3667 8.07161 26.5105 7.73828" fill="#051244" />
                                 </svg>
                             </li>
-                            <li>
+                            <li className='cursor-pointer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20" fill="none">
                                     <g clip-path="url(#clip0_0_835)">
                                         <path d="M1.99997 0H30C31.104 0 32 0.779061 32 1.73989V18.261C32 19.2209 31.104 20 30 20H1.99997C0.89497 20.0001 0 19.2209 0 18.2611V1.73989C0 0.779061 0.895957 0 1.99997 0Z" fill="#26A6D1" />
@@ -226,7 +226,7 @@ function Footer() {
                                     </defs>
                                 </svg>
                             </li>
-                            <li>
+                            <li className='cursor-pointer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20" fill="none">
                                     <rect x="0.5" y="0.5" width="31" height="19" rx="1.5" fill="white" />
                                     <rect x="0.5" y="0.5" width="31" height="19" rx="1.5" stroke="#D1D1D1" />
@@ -252,7 +252,7 @@ function Footer() {
                                     <path d="M28.293 7.54541V6.9319H28.4204L28.5902 7.35369C28.5902 7.39203 28.6327 7.43038 28.6327 7.43038C28.6327 7.39203 28.6327 7.39203 28.6752 7.31535L28.845 6.89355H28.9724V7.50707H28.8875V6.97024L28.6752 7.50707H28.5478L28.3354 6.97024V7.50707H28.293V7.54541Z" fill="#32A6CE" />
                                 </svg>
                             </li>
-                            <li>
+                            <li className='cursor-pointer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20" fill="none">
                                     <g clip-path="url(#clip0_0_863)">
                                         <path d="M32 18.1625C32 19.0953 31.1531 19.8515 30.1084 19.8515H1.89156C0.846875 19.8516 0 19.0953 0 18.1625V1.83641C0 0.903655 0.846875 0.147461 1.89156 0.147461H30.1084C31.1532 0.147461 32 0.903655 32 1.83641V18.1625Z" fill="#306FC5" />

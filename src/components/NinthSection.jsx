@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function TenthSection() {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     return (
         <div className='bg-[#F6F5F5] relative min-h-screen'>
-            <h1 className='pt-[100px] text-center text-[#060606] font-montserrat xs:text-[48px] sm:text-[56px] md:text-[70px] font-semibold leading-[84px] tracking-[0.5px] uppercase'>Product of <span className='stroketext'>the month</span></h1>
+            <h1 data-aos="fade-up" className='pt-[100px] text-center text-[#060606] font-montserrat xs:text-[48px] sm:text-[56px] md:text-[70px] font-semibold leading-[84px] tracking-[0.5px] uppercase'>Product of <span className='stroketext'>the month</span></h1>
             <div className='flex flex-wrap px-[50px] sm:px-[150px] xl:px-[263px] pt-[48px] pb-[100px]'>
                 <div className='w-full 2xl:w-1/2 flex'>
                     <div className='flex flex-col items-center'>
@@ -13,10 +18,10 @@ function TenthSection() {
                             </svg>
                         </button>
                         <div>
-                            <img className='rounded-lg' src='/images/bag_small1.png' />
-                            <img className='rounded-lg' src='/images/bag_small2.png' />
-                            <img className='rounded-lg' src='/images/bag_small3.png' />
-                            <img className='rounded-lg' src='/images/bag_small4.png' />
+                            <img className='rounded-lg' src='/images/bag_small1.png' alt='bag1' />
+                            <img className='rounded-lg' src='/images/bag_small2.png' alt='bag2' />
+                            <img className='rounded-lg' src='/images/bag_small3.png' alt='bag3' />
+                            <img className='rounded-lg' src='/images/bag_small4.png' alt='bag4' />
                         </div>
                         <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
@@ -25,7 +30,7 @@ function TenthSection() {
                         </button>
                     </div>
                     <div>
-                        <img className='rounded-3xl' src='/images/bag_large.png' />
+                        <img className='rounded-3xl' src='/images/bag_large.png' alt='bag5' />
                     </div>
                 </div>
                 <div className='w-full 2xl:w-1/2'>
@@ -44,11 +49,11 @@ function TenthSection() {
                                 Size:
                             </p>
                             <div className='flex list-none '>
-                                <li className='px-4 py-2 border border-[rgba(39, 35, 18, 0.50)]'>S</li>
-                                <li className='px-4 py-2 border border-[rgba(39, 35, 18, 0.50)]'>M</li>
-                                <li className='px-4 py-2 border border-[rgba(39, 35, 18, 0.50)]'>L</li>
-                                <li className='px-4 py-2 border border-[rgba(39, 35, 18, 0.50)]'>XL</li>
-                                <li className='px-4 py-2 border border-[rgba(39, 35, 18, 0.50)]'>XXL</li>
+                                <li className='px-4 py-2 border cursor-pointer hover:border-black transition duration-300'>S</li>
+                                <li className='px-4 py-2 border cursor-pointer hover:border-black transition duration-300'>M</li>
+                                <li className='px-4 py-2 border cursor-pointer hover:border-black transition duration-300'>L</li>
+                                <li className='px-4 py-2 border cursor-pointer hover:border-black transition duration-300'>XL</li>
+                                <li className='px-4 py-2 border cursor-pointer hover:border-black transition duration-300'>XXL</li>
                             </div>
                         </div>
                         <div className='flex flex-col pt-[24px]'>
@@ -56,41 +61,41 @@ function TenthSection() {
                                 Quantity:
                             </p>
                             <div className='flex list-none pt-[12px]'>
-                                <li className='px-4 py-2 border border-[#000]'><button>-</button></li>
+                                <li className='px-4 py-2 border border-[#000] hover:border-blue-400 transition duration-300 cursor-pointer'><button>-</button></li>
                                 <li className='px-4 py-2 border border-[#000]'>1</li>
-                                <li className='px-4 py-2 border border-[#000]'><button>+</button></li>
+                                <li className='px-4 py-2 border border-[#000] hover:border-blue-400 transition duration-300 cursor-pointer'><button>+</button></li>
                             </div>
                         </div>
                         <div className='flex flex-col lg:flex-row pt-[24px] gap-6 w-full flex-1'>
-                            <button className='text-[16px]  w-full lg:w-1/2 rounded-xl border border-[#272312] px-8 py-4 not-italic font-medium leading-[20px] tracking-[0.08px]'>
+                            <button className='text-[16px] hover:border-blue-500 transistion duration-300 w-full lg:w-1/2 rounded-xl border border-[#272312] px-8 py-4 not-italic font-medium leading-[20px] tracking-[0.08px]'>
                                 <p className='text-[#000] text-center text-[16px] font-medium leading-[19.2px] tracking-[0.08px] '>ADD TO CART</p>
                             </button>
-                            <button className='text-[16px]  w-full lg:w-1/2 bg-[#000] px-8 py-4 rounded-xl not-italic font-medium leading-[20px] tracking-[0.08px]'>
+                            <button className='text-[16px] hover:bg-black/70 transistion duration-300 w-full lg:w-1/2 bg-[#000] px-8 py-4 rounded-xl not-italic font-medium leading-[20px] tracking-[0.08px]'>
                                 <p className='text-[#fff] text-center text-[16px] font-medium leading-[19.2px] tracking-[0.08px] '> BUY IT NOW</p>
                             </button>
                         </div>
                         <div className='pt-[24px] flex gap-3'>
                             <p className='text-[20px] not-italic font-bold leading-[24px] tracking-[0.1px]'>Share:</p>
                             <div className='flex list-none gap-3'>
-                                <li>
+                                <li className="cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M8.07999 11.04C8.01999 11.04 6.69999 11.04 6.09999 11.04C5.77999 11.04 5.67999 10.92 5.67999 10.62C5.67999 9.82002 5.67999 9.00002 5.67999 8.20002C5.67999 7.88002 5.79999 7.78002 6.09999 7.78002H8.07999C8.07999 7.72002 8.07999 6.56002 8.07999 6.02002C8.07999 5.22002 8.21999 4.46002 8.61999 3.76002C9.03999 3.04002 9.63999 2.56002 10.4 2.28002C10.9 2.10002 11.4 2.02002 11.94 2.02002H13.9C14.18 2.02002 14.3 2.14002 14.3 2.42002V4.70002C14.3 4.98002 14.18 5.10002 13.9 5.10002C13.36 5.10002 12.82 5.10002 12.28 5.12002C11.74 5.12002 11.46 5.38002 11.46 5.94002C11.44 6.54002 11.46 7.12002 11.46 7.74002H13.78C14.1 7.74002 14.22 7.86002 14.22 8.18002V10.6C14.22 10.92 14.12 11.02 13.78 11.02C13.06 11.02 11.52 11.02 11.46 11.02V17.54C11.46 17.88 11.36 18 11 18C10.16 18 9.33999 18 8.49999 18C8.19999 18 8.07999 17.88 8.07999 17.58C8.07999 15.48 8.07999 11.1 8.07999 11.04Z" fill="#060606" />
                                     </svg>
                                 </li>
-                                <li>
+                                <li className="cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M17.98 5.04C17.38 5.3 16.76 5.48 16.1 5.56C16.78 5.16 17.3 4.52 17.54 3.74C16.9 4.12 16.2 4.38 15.46 4.54C14.86 3.9 14 3.5 13.06 3.5C11.24 3.5 9.77998 4.98 9.77998 6.78C9.77998 7.04 9.79998 7.28 9.85998 7.52C7.13998 7.4 4.73998 6.08 3.11998 4.1C1.95998 6.18 3.25998 7.9 4.11998 8.48C3.59998 8.48 3.07998 8.32 2.63998 8.08C2.63998 9.7 3.77998 11.04 5.25998 11.34C4.93998 11.44 4.21998 11.5 3.77998 11.4C4.19998 12.7 5.41998 13.66 6.83998 13.68C5.71998 14.56 4.07998 15.26 1.97998 15.04C3.43998 15.98 5.15998 16.52 7.01998 16.52C13.06 16.52 16.34 11.52 16.34 7.2C16.34 7.06 16.34 6.92 16.32 6.78C17 6.28 17.56 5.7 17.98 5.04Z" fill="#060606" />
                                     </svg>
                                 </li>
-                                <li>
+                                <li className="cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M18 18.0001V12.1401C18 9.26006 17.38 7.06006 14.02 7.06006C12.4 7.06006 11.32 7.94006 10.88 8.78006H10.84V7.32006H7.65997V18.0001H10.98V12.7001C10.98 11.3001 11.24 9.96006 12.96 9.96006C14.66 9.96006 14.68 11.5401 14.68 12.7801V17.9801H18V18.0001Z" fill="#060606" />
                                         <path d="M2.26001 7.32007H5.58001V18.0001H2.26001V7.32007Z" fill="#060606" />
                                         <path d="M3.92 2C2.86 2 2 2.86 2 3.92C2 4.98 2.86 5.86 3.92 5.86C4.98 5.86 5.84 4.98 5.84 3.92C5.84 2.86 4.98 2 3.92 2Z" fill="#060606" />
                                     </svg>
                                 </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <li className="cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18" fill="none">
                                         <g clip-path="url(#clip0_0_604)">
                                             <path d="M13.0325 0H4.96721C2.22829 0 0 2.2284 0 4.96732V13.0326C0 15.7716 2.22829 17.9999 4.96721 17.9999H13.0325C15.7716 17.9999 17.9999 15.7715 17.9999 13.0326V4.96732C18 2.2284 15.7716 0 13.0325 0ZM16.403 13.0326C16.403 14.891 14.891 16.4029 13.0326 16.4029H4.96721C3.1089 16.403 1.59704 14.891 1.59704 13.0326V4.96732C1.59704 3.10901 3.1089 1.59704 4.96721 1.59704H13.0325C14.8909 1.59704 16.4029 3.10901 16.4029 4.96732V13.0326H16.403Z" fill="#060606" />
                                             <path d="M8.99993 4.36206C6.44244 4.36206 4.36182 6.44268 4.36182 9.00018C4.36182 11.5576 6.44244 13.6381 8.99993 13.6381C11.5574 13.6381 13.6381 11.5576 13.6381 9.00018C13.6381 6.44268 11.5574 4.36206 8.99993 4.36206ZM8.99993 12.0409C7.32315 12.0409 5.95885 10.6769 5.95885 9.00007C5.95885 7.32318 7.32304 5.95899 8.99993 5.95899C10.6768 5.95899 12.041 7.32318 12.041 9.00007C12.041 10.6769 10.6767 12.0409 8.99993 12.0409Z" fill="#060606" />
@@ -106,7 +111,7 @@ function TenthSection() {
                             </div>
                         </div>
                         <div className='pt-[24px]'>
-                            <p className='border-b border-[#000] inline-flex cursor-pointer'>View Details</p>
+                            <p className='border-b border-[#000] hover:border-blue-500 hover:text-blue-500 transition duration-300 inline-flex cursor-pointer'>View Details</p>
                         </div>
                     </div>
                 </div>
