@@ -2,9 +2,9 @@ import React from 'react'
 
 function Features() {
     return (
-        <div className='features bg-[]'>
-            <div className='py-[100px] px-[160px] flex gap-[93px]'>
-                <div className='flex flex-col'>
+        <div className='features'>
+            <div className='py-[100px] flex flex-wrap justify-center lg:flex-nowrap gap-[36px] px-[50px] md:px-[100px] lg:px-[160px] lg:gap-[50px] xl:gap-[70px] 2xl:gap-[93px]'>
+                <div className='flex flex-col items-center lg:items-start'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <g clip-path="url(#clip0_0_614)">
@@ -23,11 +23,11 @@ function Features() {
                     <p className='pt-6 text-[#fff] font-montserrat text-[24px] font-medium leading-[28.8px] tracking-[0.12px]'>
                         Shipping
                     </p>
-                    <p className='pt-3 text-[#fff] text-[16px] font-normal leading-[24px] tracking-[0.08px]'>
+                    <p className='pt-3 text-center lg:text-start text-[#fff] text-[16px] font-normal leading-[24px] tracking-[0.08px]'>
                         The attention to detail is evident in every aspect of this backpack.
                     </p>
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex flex-col items-center lg:items-start'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <g clip-path="url(#clip0_0_623)">
@@ -46,11 +46,11 @@ function Features() {
                     <p className='pt-6 text-[#fff] font-montserrat text-[24px] font-medium leading-[28.8px] tracking-[0.12px]'>
                         Return
                     </p>
-                    <p className='pt-3 text-[#fff] text-[16px] font-normal leading-[24px] tracking-[0.08px]'>
+                    <p className='pt-3 text-center lg:text-start text-[#fff] text-[16px] font-normal leading-[24px] tracking-[0.08px]'>
                         The attention to detail is evident in every aspect of this backpack.
                     </p>
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex flex-col items-center lg:items-start'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <g clip-path="url(#clip0_0_632)">
@@ -70,11 +70,11 @@ function Features() {
                     <p className='pt-6 text-[#fff] font-montserrat text-[24px] font-medium leading-[28.8px] tracking-[0.12px]'>
                         Support
                     </p>
-                    <p className='pt-3 text-[#fff] text-[16px] font-normal leading-[24px] tracking-[0.08px]'>
+                    <p className='pt-3 text-center lg:text-start text-[#fff] text-[16px] font-normal leading-[24px] tracking-[0.08px]'>
                         The attention to detail is evident in every aspect of this backpack.
                     </p>
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex flex-col items-center lg:items-start'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <g clip-path="url(#clip0_0_643)">
@@ -90,7 +90,7 @@ function Features() {
                     <p className='pt-6 text-[#fff] font-montserrat text-[24px] font-medium leading-[28.8px] tracking-[0.12px]'>
                         Payment
                     </p>
-                    <p className='pt-3 text-[#fff] text-[16px] font-normal leading-[24px] tracking-[0.08px]'>
+                    <p className='pt-3 text-center lg:text-start text-[#fff] text-[16px] font-normal leading-[24px] tracking-[0.08px]'>
                         The attention to detail is evident in every aspect of this backpack.
                     </p>
                 </div>

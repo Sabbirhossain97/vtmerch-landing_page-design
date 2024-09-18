@@ -9,9 +9,11 @@ import SeventhSection from './components/SeventhSection';
 import EigthSection from './components/EigthSection';
 import NinthSection from './components/NinthSection';
 import Features from './components/Features';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <div >
+    <div className='overflow-hidden'>
       <Home />
       <SecondSection />
       <ThirdSection />
@@ -22,6 +24,7 @@ function App() {
       <EigthSection />
       <NinthSection />
       <Features />
+      <Footer />
     </div>
   );
 }

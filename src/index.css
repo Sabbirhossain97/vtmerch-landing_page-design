@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 @font-face {
   font-family: "Act of Rejection";
   src: url("./static/Act_Of_Rejection.ttf") format("truetype");
@@ -35,8 +37,8 @@
 }
 
 .second-stroketext {
-  color: black;
-  -webkit-text-stroke: 1px #fff;
+  color: #1c1c1c;
+  text-shadow: -1px 1px white, 1px -1px white, -1px 1px white, 1px 1px white
  
 }
 

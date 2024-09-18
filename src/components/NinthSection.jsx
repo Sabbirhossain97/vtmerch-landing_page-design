@@ -2,11 +2,10 @@ import React from 'react'
 
 function TenthSection() {
     return (
-        <div className='bg-[#F6F5F5] relative'>
-            <h1 className='pt-[100px] text-center text-[#060606] font-montserrat text-[70px] font-semibold leading-[84px] tracking-[0.5px] uppercase'>Product of <span className='stroketext'>the month</span></h1>
-
-            <div className='flex items-stretch px-[263px] pt-[48px] pb-[100px]'>
-                <div className='w-1/2 flex '>
+        <div className='bg-[#F6F5F5] relative min-h-screen'>
+            <h1 className='pt-[100px] text-center text-[#060606] font-montserrat xs:text-[48px] sm:text-[56px] md:text-[70px] font-semibold leading-[84px] tracking-[0.5px] uppercase'>Product of <span className='stroketext'>the month</span></h1>
+            <div className='flex flex-wrap px-[50px] sm:px-[150px] xl:px-[263px] pt-[48px] pb-[100px]'>
+                <div className='w-full 2xl:w-1/2 flex'>
                     <div className='flex flex-col items-center'>
                         <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
@@ -29,9 +28,9 @@ function TenthSection() {
                         <img className='rounded-3xl' src='/images/bag_large.png' />
                     </div>
                 </div>
-                <div className='w-1/2'>
-                    <div className='flex flex-col'>
-                        <p className='font-montserrat text-[32px] text-nowrap not-italic font-bold leading-[38.4px] tracking-[0.16px]'>
+                <div className='w-full 2xl:w-1/2'>
+                    <div className='flex flex-col '>
+                        <p className='font-montserrat text-[32px] text-wrap 2xl:text-nowrap not-italic font-bold leading-[38.4px] tracking-[0.16px]'>
                             Premium Valuetainment Leather Backpack
                         </p>
                         <p className='text-[16px] pt-3 font-normal leading-[24px] tracking-[0.08px]'>
@@ -40,11 +39,11 @@ function TenthSection() {
                         <p className='font-montserrat pt-6 text-[24px] not-italic font-bold leading-[28.8px] tracking-[0.12px]'>
                             Price: <span className='text-[#EA2127] font-montserrat text-[24px] not-italic font-bold leading-[28.8px] tracking-[0.12px]'>$199.95</span>
                         </p>
-                        <div className='flex pt-6 items-center'>
+                        <div className='flex flex-wrap justify-start gap-3 pt-6 items-center'>
                             <p className='text-[20px] not-italic font-bold leading-[24px] tracking-[0.1px]'>
                                 Size:
                             </p>
-                            <div className='flex list-none pl-3'>
+                            <div className='flex list-none '>
                                 <li className='px-4 py-2 border border-[rgba(39, 35, 18, 0.50)]'>S</li>
                                 <li className='px-4 py-2 border border-[rgba(39, 35, 18, 0.50)]'>M</li>
                                 <li className='px-4 py-2 border border-[rgba(39, 35, 18, 0.50)]'>L</li>
@@ -62,11 +61,11 @@ function TenthSection() {
                                 <li className='px-4 py-2 border border-[#000]'><button>+</button></li>
                             </div>
                         </div>
-                        <div className='flex pt-[24px] gap-6 w-full flex-1'>
-                            <button className='text-[16px] w-1/2 rounded-xl border border-[#272312] not-italic font-medium leading-[20px] tracking-[0.08px]'>
+                        <div className='flex flex-col lg:flex-row pt-[24px] gap-6 w-full flex-1'>
+                            <button className='text-[16px]  w-full lg:w-1/2 rounded-xl border border-[#272312] px-8 py-4 not-italic font-medium leading-[20px] tracking-[0.08px]'>
                                 <p className='text-[#000] text-center text-[16px] font-medium leading-[19.2px] tracking-[0.08px] '>ADD TO CART</p>
                             </button>
-                            <button className='text-[16px] w-1/2 bg-[#000] px-8 py-4 rounded-xl not-italic font-medium leading-[20px] tracking-[0.08px]'>
+                            <button className='text-[16px]  w-full lg:w-1/2 bg-[#000] px-8 py-4 rounded-xl not-italic font-medium leading-[20px] tracking-[0.08px]'>
                                 <p className='text-[#fff] text-center text-[16px] font-medium leading-[19.2px] tracking-[0.08px] '> BUY IT NOW</p>
                             </button>
                         </div>

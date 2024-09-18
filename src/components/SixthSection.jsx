@@ -20,10 +20,10 @@ function SixthSection() {
     return (
         <div className='bg-[#F6F5F5]'>
             <div className='flex flex-col'>
-                <div className='font-montserrat text-[70px] not-italic font-semibold leading-[84px] tracking-[0.5px] uppercase w-full px-[150px] mt-[100px]'>
+                <div className='font-montserrat text-[32px] lg:text-[50px] xl:text-[60px] 2xl:text-[70px] text-center 2xl:text-start not-italic font-semibold leading-[84px] tracking-[0.5px] uppercase w-full px-[50px] lg:px-[150px] mt-[100px]'>
                     New Arrival
                 </div>
-                <div className="relative grid grid-cols-1 z-20 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-[48px] px-[150px] pb-[100px]">
+                <div className="relative grid grid-cols-1 sm:grid-cols-2 z-20 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 pt-[48px] px-[50px] md:px-[120px] xl:px-[100px] 2xl:px-[150px] pb-[100px]">
                     <ProductCard
                         imgSrc="/images/cap_1.jpeg"
                         title="Army Green Active Short Sleeve"
