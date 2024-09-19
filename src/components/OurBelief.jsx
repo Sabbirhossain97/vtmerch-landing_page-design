@@ -1,11 +1,8 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
 import "aos/dist/aos.css";
 
-function EigthSection() {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
+function OurBelief() {
+    
     return (
         <div className='eigth-section min-h-[1056px] relative z-100'>
             <div className='hidden lg:block absolute -bottom-8 right-2 transform -translate-x-1/2'>
@@ -56,4 +53,4 @@ function EigthSection() {
     )
 }
 
-export default EigthSection
+export default OurBelief

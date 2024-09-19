@@ -1,11 +1,8 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
-function ThirdSection() {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
+
+function SignedCollection() {
+ 
     return (
         <div>
             <div className='bg-[#111] min-h-[852px] flex flex-wrap'>
@@ -43,4 +40,4 @@ function ThirdSection() {
     )
 }
 
-export default ThirdSection
+export default SignedCollection

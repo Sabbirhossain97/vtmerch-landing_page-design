@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
 import "aos/dist/aos.css";
 
 const ProductCard = ({ imgSrc, title, price, oldPrice }) => (
@@ -17,10 +16,8 @@ const ProductCard = ({ imgSrc, title, price, oldPrice }) => (
     </div>
 );
 
-function SeventhSection() {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
+function NewSeries() {
+  
     return (
         <div className='py-[100px] px-[50px] lg:px-[100px] xl:px-[120px]'>
             <div className='flex flex-col 2xl:flex-row justify-center '>
@@ -52,4 +49,4 @@ function SeventhSection() {
     )
 }
 
-export default SeventhSection
+export default NewSeries
